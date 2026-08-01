@@ -1,0 +1,1 @@
+const g=document.getElementById("glow");document.addEventListener("pointermove",e=>{g.style.left=e.clientX+"px";g.style.top=e.clientY+"px";document.querySelectorAll(".card").forEach(c=>{const r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;c.style.transform=`perspective(800px) rotateY(${x*18}deg) rotateX(${-y*18}deg)`;});});
