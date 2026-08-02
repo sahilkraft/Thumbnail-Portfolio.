@@ -1,1 +1,11 @@
-body{margin:0;background:#0b0b0f;color:#fff;font-family:Arial;text-align:center}h1{margin:30px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px;padding:24px}.card{border-radius:18px;overflow:hidden;transition:transform .15s;box-shadow:0 0 20px rgba(0,255,255,.15)}.card img{width:100%;display:block}#glow{position:fixed;width:220px;height:220px;border-radius:50%;background:radial-gradient(circle,rgba(0,255,255,.35),transparent 70%);pointer-events:none;transform:translate(-50%,-50%);}
+.gallery {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  cursor: grab;
+  scroll-behavior: smooth;
+}
+
+.gallery::-webkit-scrollbar {
+  display: none;
+}
